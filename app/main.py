@@ -2,7 +2,7 @@ from app.knights.knights_data import KNIGHTS
 from app.knights.knight import Knight
 
 
-def battle(knights_config: dict) -> str:
+def battle(knights_config: dict) -> dict:
     knights = {name: Knight(**config) for name,
                config in knights_config.items()}
 
